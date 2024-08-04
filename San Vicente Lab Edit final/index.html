@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="icon" href="logo1.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+   
+    <title>
+        Barangay San Vicente   
+    </title>
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+            
+            }
+        nav{
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            background-color: wheat;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            left: 0px;
+            z-index: 10;
+            height: 59px;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+        }
+        li{
+            float: right;
+        }
+        a, .dropbtn{
+            padding: 20px;
+            width: 100px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        #section1{
+            height:2000px;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 1228px;
+            
+        }
+        #section2{
+            height: 1640px;
+            display: inline-block;
+            width: 100%;
+            background: white; 
+        }
+        #section3{
+            height: 3800px;
+            display: inline-block;
+            width: 100%;
+            background: white;
+        }
+        #section4{
+            height: 1621px;
+            display: inline-block;
+            width: 100%;
+            background: white;
+        }
+        #section5{
+            height: 872px;
+            display: inline-block;
+            width: 100%;
+            background: wheat;
+        }
+        h1{
+            margin: 100px;
+            text-align: center;
+            padding: 0;
+        }
+        .banner{
+            width: 100%%;
+            height: 50px;
+            background-color: #fff700;
+            
+        }
+        .overlay {
+            position: relative;
+            top: -31px;
+            left: 0;
+            width: 100%;
+            height: 31%;
+            background-color: rgb(0 0 0 / 66%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .rectangle{
+            background: white;
+            width: 39%;
+            height: 16%;
+            position: absolute;
+            top: 64%;
+            left: 31%;
+            box-shadow: -1px 7px 10px rgb(0 0 0 / 38%);
+            z-index: 11;
+        }
+        .dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 9px;
+  background: none;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+.dropdown-content a:hover {background-color:  #fff700;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color:none;}
+        #container{
+            width: 1344px;
+            margin: 150px auto;
+            height: 500px;
+            margin-top: 0;
+        }
+        .column1, .column2, .column3{
+            width: 400px;
+            float: left;
+            margin-left: 24px; 
+            margin-right: 24px; 
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+        #container2{
+            width: 1592px;
+            margin: 150px auto;
+            height: 491px;
+            background: wheat;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .con1, .con2{
+            width: 400px;
+            float: left;
+            margin-left: 160px;
+            margin-right: 170px;
+            margin-top: 70px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 28px;
+            font-size: 17px;
+            box-shadow: 7px 6px 15px rgb(0 0 0 / 39%), -5px -4px 15px rgb(0 0 0 / 39%);
+            border-radius: 5PX;
+            padding: 33px;
+            background: yellow;
+        }
+        .font{
+            font-family: "Quintessential", serif;;
+        }
+        #history{
+            width: 1592px;
+            margin: 150px auto;
+            height: 1073px;
+            background: wheat;
+            margin-top: -150px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        
+        }
+        .his1, .his2, .his3{
+            width: 400px;
+            float: left;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            line-height: 23px;
+            text-align: justify;
+            position: relative;
+            left: 116px;
+        }
+        .midline{
+            width: 100%;
+            height: 3px;
+            background-color: #ffffff;
+            position: relative;
+            top: 272%;
+            box-shadow: 1px 13px 6px rgb(0 0 0 / 93%);
+        }
+        #news{
+            width: 1592px;
+            margin: 150px auto;
+            height: 1109px;
+            background: white;
+            margin-top: -15px;
+        }
+        .news1, .news2, .news3{
+            width: 31%;
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 35px;
+            margin-bottom: 52px;
+            line-height: 23px;
+            text-align: justify;
+            position: relative;
+            left: 16px;
+        }
+        .faq-container {
+    width: 113%;
+    max-width: 1393px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 7px 2px rgb(0 0 0 / 48%);
+    margin-top: 141px;}
+
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Quintessential', cursive;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+        
+  
+
+
+
+
+
+
+
+
+
+.bry-officers-container{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.officers{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 50%;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #fdfeff73;
+}
+
+.officers p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.box {
+    height: 220px;
+    width: 170px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.box p {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 4px;
+    font-weight: 600;
+    
+}
+
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.box-kapitan {
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 10px 10px 8px #888888;
+    z-index: 2;    
+
+   
+}
+
+.box-kapitan p {
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.box-kapitan h4 {
+    margin-top: 0px;
+    margin-left: 112px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box-kapitan img {
+    width: 100%;
+    object-fit: cover;
+}
+.kapitan  {
+    margin-left: 100px;
+    width: 200px;
+    
+}
+
+.divider {
+    margin-left: 13px;
+    border: 1px solid black;
+    width: 125px;
+}
+.description {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    border-bottom: 2px solid black;
+    margin-left: 15%;
+}
+
+.description p {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.description-sk {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    border-bottom: 2px solid black;
+    margin-left: 62%;
+}
+
+.description-sk p {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+footer {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    background-color: #222222;
+    color: rgb(189, 182, 182);
+}
+
+.summary { grid-area: summary; }
+
+.summary2 { grid-area: summary2; }
+
+.demo1 { grid-area: demo1; }
+
+.demo2 { grid-area: demo2; }
+        
+        .container3 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". demo1 demo1 demo1 summary"
+    ". demo1 demo1 demo1 summary"
+    ". . . . ."
+    ". demo2 demo2 demo2 summary2"
+    ". demo2 demo2 demo2 summary2"
+    ". . . . .";
+}
+
+.summary { grid-area: summary; }
+
+.summary2 { grid-area: summary2; }
+
+.demo1 { grid-area: demo1; }
+
+.demo2 { grid-area: demo2; }
+        
+        .hpopulation{
+            margin-left: 60px;
+            margin-right: 50px;
+        }
+.container4 {  
+    margin-top: -839px;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". demo3 demo3 demo3 summary3"
+    ". demo3 demo3 demo3 summary3"
+    ". demo4 demo4 demo4 summary4"
+    ". demo4 demo4 demo4 summary4";
+}
+
+.demo3 { grid-area: demo3; }
+
+.demo4 { grid-area: demo4; }
+
+.summary3 { grid-area: summary3; }
+
+.summary4 { grid-area: summary4; }
+
+
+    .footer-container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo content content content extra";
+}
+
+.logo { grid-area: logo; }
+
+.content { grid-area: content; }
+
+.extra { grid-area: extra; }
+
+
+
+    </style>
+    
+    </head>
+<body>
+    <div class="banner"></div>
+    <nav>
+    <ul>
+        <li><a href="#section5">FAQ</a></li>
+        <li><a href="#section4">Officials</a></li>
+        <li><a href="#section3">About</a></li>
+        <li><a href="#section2">News</a></li>
+        <li><a href="#section1">Home</a></li>  
+    </ul>
+    </nav>
+  
+    
+    <div id="section1">
+        <img src="logo1.png" style="position:absolute;width: 10%;left: 2%;top: 1%; z-index: 12;">
+        <img src="hall.jpg" style="width: 100%; position: absolute; left: 0%; top: -18%; border-radius: 5px; z-index: -2; height: 84%;">
+        <p class="overlay"></p>
+        <h style="position: absolute;top: 21%;left: 27%;color: #ffffff;font-weight: bold;font-size: 159px;font-family: Zain;line-height: 1;">BARANGAY <br>&nbsp;&nbsp;&nbsp;&nbsp;SAN VICENTE</h>
+        <div class="rectangle"></div>
+        
+        <a href="#section4"><img src="profile.gif" style="width: 118px; position: absolute;left: 1045px;top: 65%;z-index: 11;"></a>
+        <a href="#section1"><img src="home2.gif" style="width: 118px;position: absolute;left: 608px;top: 65%;z-index: 11;"></a>
+        <a href="#section3"><img src="maps.gif" style="width: 118px; position: absolute;left: 900px;top: 65%;z-index: 11;"></a>
+        <a href="#section5"><img src="faq.gif" style="width: 118px; position: absolute;left: 1191px;top: 65%;z-index: 11;"></a>
+        <a href="#section2"><img src="news.gif" style="width: 118px;position: absolute;left: 757px;top: 65%;z-index: 11;"></a>
+    
+        <div id="container">
+            <div class="column1"><img src="logo1.png" style="width: 400px;box-shadow: 9px 11px 10px rgb(0 0 0 / 56%);border-radius: 198px;"></div>
+            <div class="column2" style="line-height: 23px;text-align: left;font-size: 17px;">Barangay San Vicente is a vibrant community known for its friendly atmosphere and close-knit residents. Nestled in a picturesque location, it boasts a blend of traditional and modern amenities. The area features well-maintained parks, bustling markets, and a variety of local businesses that cater to the daily needs of its inhabitants. Educational institutions and healthcare facilities are also conveniently accessible, contributing to the overall quality of life. With its welcoming environment and community spirit, Barangay San Vicente is a charming place to live and visit.The community actively participates in various cultural and social activities, fostering a strong sense of unity and belonging among its members. Festivals and local events are regularly celebrated, reflecting the rich heritage and traditions of Barangay San Vicente. The barangay hall serves as a hub for civic engagement, where residents come together to discuss and address communal concerns, ensuring the continuous development and improvement of the area.</div>
+            <div class="column3"><img src="hall.jpg" style="width: 437px;border-radius: 7px;height: 403px;box-shadow: 2px -2px 10px rgb(0 0 0);"></div>
+        </div>
+         <div id="container2">
+             <div class="con1"><b><span class="font">MISSION</span></b><br><br>BARANGAY SAN VICENTE shall spearhead the massive implementation of various community program, projects and activities to its constituents, enhancing the active participation of all non-government organizations community-building, mobilizing its resources with in promoting the general well-being of its people for a progressive and peaceful community to live in.</div>
+             <div class="con1"><b><span class="font">VISION</span></b><br><br>BARANGAY SAN VICENTE as the economic and commercial seat of the City of Ilagan home for morally upright and healthy citizenry living in an ecologically balanced environment with a progressive and stable economy lead by righteous leadership.</div>
+        </div>
+        <div id="history">
+            <p style="text-align: center;font-family: &quot;Quintessential&quot;, serif; font-size: 20px;"><br><b>BARANGAY HISTORY</b></p>
+             <div class="his1">Be it remembered those four hundred sixty-eight (468) years. Vincent Ferrer was born to a rich and famous couple in Valencia, Spain. With such parenthood capacity, it has been revealed that his parents and family was Gods fearing one`s, so as state that his upbringing was in a manner that his family have bounded themselves as they have devoted in the manifestation of their live to the Almighty, thenceforth embraced their civic duties and the needy. One evening, a native within our locality by the name of ANATALIA TAGACA have as it had a dream, and it was the apparition Saint Vincent de Ferrer pleasing the former for his transfer from that cave where his image as found within the limits of our community. With her wisdom and courage, said Anatalia Tagaca wasted no moment as did inform the Parish Priest of the Municipality. The latter accordingly responded to the report given him by the former, immediately the Priest repaired to the place in company of Anatalia Tagaca and as instructed tried to carry image of St. Vincent de Ferrer purposely to bring the same to the church but the Parish not anyone in his company could not move him from its place where he was found for these reasons, the Parish Priest solicited the involvement and /or participation of the following constituents namely: CLARO AGUSTIN, CLARA AGUSTIN, MARIA TAGAPUEN, together with anatalia tagaca whom the apparition of St. Vincent de Ferrer appeared and convened themselves too appeared to perform a novena which they believe  they could secure the authority  of our St. Vincent  for its transfer from the cave where a spring is found. As they did perform the novena for nine (9) successive was six (6) feet in height and finally transferred him to the place where its Grotto was constructed since then to the present date.
+            </div>
+            
+            <div class="his2">One day following his transfer from that cave, leaving that live spring where constituents take their portable water and reliable revelations indeed that the water which they derived from the cave gave cure to common ailments to these constituents. Then on, Anatalia Tagaca have a dream and the second apparition of St. Vincent de ferrer euphonizing his conformity of his transfer being undertaken by them hut they could not explain the fact that the spring inside the cave got dried. So forth, then Anatalia Tagaca asked the authorities of our locality and it was passing that our place was named after his name SAN VICENTE. The Saint of Prophets. In recalling his civic activities and his achievements reliable records that St. Vincent de Ferrer have enrolled at the Ordain of Dominico, where upon he become a mentor in the university of Spain and France. It was on October 3, 1398 that saw Saint Domingo, Saint Francisco de Asis and Jesus Christ were upon he was asked by the son of the father to join him to different places to preach for the worlds of God, and the four (4) messages all about: Death, Millennium, Hell and Glory. He roved all over Spain, Italy and France, where he performed various miracles and healed many people in the name of the Almighty. Likewise, by virtue of his intercession its mode the conversion of some eight (8) thousand Muslims to Christianity; He was proclaimed an angel and a prophet the Saint of Prophets. In summing his existence, he was born in the year of our Lord 1380 and died in 1419 at age of sixty-nine (69), leaving his wealth to the needy and finally joined the almighty in heaven.</div>
+            
+            <div class="his3"><img src=vincentus.jpg style="float: left; margin: 0 15px 15px 0;"> Vincent de Ferrer was born in 1350 in the City of Valencia, of a rich family. The parents of Saint Vincent wanted to make their son a Saint and through the grace of God they succeeded. From earliest childhood they intense love for the poor. The distribution of alms was entrusted to him and he was allowed to dispose of a third part of his inheritance in favor of the needy.
+            At the age of eight Vincent began his clerical studies. He was eleven when he started his philosophy and fourteen when he undertook the study of Theology. A brilliant future either as a lawyer or a secular priest lay before the gifted young man. But Vincent spurned all these advantages when he declared to enter the Dominican Order in the year after his entrance into the order was spent in teaching, until he was made adviser to the King by John I of Oragon. He also became the Queen’s Confessor. In Barcelona, he was allowed to preach although he was still a deacon. Vincent fame as a preacher began to spread and after some years, he was allowed to devote himself wholly to missionary work. In 399, Pope Benedict XIII assigned to go on preaching tour to exhort the people to penance. He traveled throughout Europe, mostly on foot and converted thousands of heretics.  Vincent’s life was lived during the turbulent times of Great Schism, when there was a rival claimant for the Papal Throne. It was due to the efforts of the saint that eventually the schism was ended and that unity, which was essential to the Church life, was restored. The Last three years of Vincent’s life were spent in France. There he met Saint Collette, the reformer of the poor Clare’s, who foretold the years of his death. The Saint’s last sermons were preached in Nantes, when he was already so weak that he could not walk without support. After receiving the last sacrament, he died at Vanner on Wednesday of Passion Week in the years 1419 at the age of 69.
+            </div>  
+        </div>
+        <p class="midline"></p>
+        
+    </div>
+    <div id="section2">
+        <div id="news">
+          
+            <p style="text-align: center;font-family: &quot;Quintessential&quot;, serif; font-size: 20px; margin-top: -116px;"><br><br><br><br><br><br><b>NEWS</b></p>
+            
+            <div class="news1"><img src="news1.jpg" style="float: left;margin: 0 15px 6px 0px;width: 65%;height: 18%;border-radius: 7px;box-shadow: 0 4px 10px rgb(0 0 0 / 43%);">𝐇𝐀𝐍𝐃𝐀 𝐏𝐈𝐋𝐈𝐏𝐈𝐍𝐀𝐒: The 36th National Disaster Resilience Month 2024 "Bantayog ng Katatagan at ang Pagbubuklod sa Layuning Kahandaan" The BLGU San Vicente joins the nation in the observance of the National  Disaster Resiliency Month this July! 
+            
+            <br><br><br><img src="news2.jpg" style="float: left;margin: 0 15px 15px 0px;width: 99%;border-radius: 7px;box-shadow: 6px 6px 10px rgb(0 0 0 / 43%);">Honorable Barangay Captain With his remarkable speech during the IWCS Induction of Officers and 1st quarter conference.
+            
+            <br><br><br><img src="news5.jpg" style="float: left;margin: 0 8px 15px 0px;width: 65%;border-radius: 7px;box-shadow: 3px 7px 10px rgb(0 0 0 / 43%);"><b>Awarding of  Bleacher for Barangay San Vicente Covered Court.</b>Thank you Honorable Mayor Josemarie L. DIAZ, DMD, MBA, and Honorable Councilor Jay Eveson C. Diaz  for   continuesly supporting our Barangay
+            
+            <br><br><img src="news7.jpg" style="width: 487px; height: 257px; border-radius: 5px; margin-top: 21px; box-shadow: 6px 6px 10px rgb(0 0 0 / 43%);">
+            </div>
+            
+            <div class="news2"><video width="500" height="360" controls="" autoplay="" loop="" muted="" style="margin-top: -36px;box-shadow: 5px 7px 10px rgb(0 0 0 / 43%);border-radius: 5px; margin-bottom:27px;"><source src="news4.mp4" type="video/mp4"></video>𝗧𝗜𝗞𝗧𝗢𝗞 𝗘𝗡𝗧𝗥𝗜𝗘𝗦 𝗙𝗢𝗥 𝗧𝗛𝗘 𝗜𝗡𝗙𝗘𝗖𝗧𝗜𝗢𝗡 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗜𝗢𝗡 𝗔𝗡𝗗 𝗖𝗢𝗡𝗧𝗥𝗢𝗟 𝗪𝗘𝗘𝗞 - 𝗧𝗜𝗞𝗧𝗢𝗞 𝗖𝗛𝗔𝗟𝗟𝗘𝗡𝗚𝗘 ENTRY NO. 1
+            In celebrating this year’s Infection and Prevention Control (IPC) Week with the theme- "Beyond the Pandemic: HAI-lighting the Importance of IPC", all participants from the different representatives of Health Care Facilities in Region 02 to submitted their entries of the TikTok-challenge contest.
+            These entries are posted online for public viewing and social media engagement which counts. The scoring will be based on the number of Facebook likes and shares.
+            Participants are reminded not to engage in Auto-liking and Sharing to prevent their entry from being forfeited.
+            Let us all come together and raise awareness of the importance of minimum public health standards in safeguarding the health of both our patients and healthcare workers.
+            
+            <img src="news6.jpg" style="width: 487px; height: 257px; border-radius: 5px; margin-top: 21px; box-shadow: 6px 6px 10px rgb(0 0 0 / 43%); margin-bottom: 39px;">Don't miss the thrilling basketball game in San Vicente this weekend! Come and support the San as they face their fiercest rivals. Experience the excitement, the energy, and the unforgettable moments that only live sports can provide. Your cheers can make the difference – be there to witness history in the making and show your hometown pride!
+            </div>
+            
+            <div class="news3">
+            <img src="news8.jpg" style="float: right;margin: 2px 6px 2px 16px;width: 63%;border-radius: 7px;box-shadow: 6px 6px 10px rgb(0 0 0 / 43%);">𝐒𝐀𝐍 𝐕𝐈𝐂𝐄𝐍𝐓𝐄 𝐇𝐎𝐋𝐃𝐒 𝐓𝐇𝐄 𝐂𝐈𝐓𝐘'𝐒 𝐅𝐈𝐑𝐒𝐓 𝐒𝐄𝐑𝐁𝐈𝐒𝐘𝐎 𝐅𝐀𝐈𝐑, 𝐌𝐀𝐊𝐈𝐍𝐆 𝐀 𝐃𝐈𝐅𝐅𝐄𝐑𝐄𝐍𝐂𝐄 𝐈𝐍 𝐏𝐔𝐁𝐋𝐈𝐂 𝐒𝐄𝐑𝐕𝐈𝐂𝐄. The first San Vicente Serbisyo Fair (SVSF), a one-day event organised by the Barangay Local Government Unit of San Vicente, took place on December 29, 2023, in the San Vicente Covered Court in San Vicente, City of Ilagan. Despite the weather, the fair successfully drew a large crowd by showcasing a variety of programmes and services including distribution of seedlings, free medicines and consultations, free haircut, feeding program, Barangay Services (issuance of Barangay Clearance and Certificates) and the 100 Bamboo Trees in 1-day project which volunteered and participated by the Philippine National Police, City Disaster Risk Reduction and Management Council and faculty of Ilagan West Central School.The SVSF's major goal is to provide free services to all San Vicenteno residents, portraying itself as the city's largest service barangay-based-caravan committed to providing important services to underprivileged people. Hon. Mark Anthony P. Basco expressed his thanks, symbolically saying, "Ito po and umpisa ng walang humpay at walang hangganng pagbibigay serbisyo sa inyo," as he recognised Hon. Josemarie L.  Diaz as well as the citizens of San Vicente.
+            
+            <br><br><img src="news9.jpg" style="float: left;margin: 0 15px 15px 0;width: 301px;border-radius: 5px;box-shadow: 6px 6px 10px rgb(0 0 0 / 43%);">𝐋𝐎𝐎𝐊. 𝐒𝐀𝐍 𝐕𝐈𝐂𝐄𝐍𝐓𝐄 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋𝐒 𝐓𝐀𝐊𝐄𝐒 𝐎𝐀𝐓𝐇 𝐎𝐅 𝐎𝐅𝐅𝐈𝐂𝐄. City of Ilagan, Isabela Philippines — A mass oath-taking ceremony for the newly elected barangay and Sangguniang Kabataan (BSKE) officials was held at the City of Ilagan Community Center. Hon. Mark Anthony P. Basco and his court attends the said ceremony to officially start the 2-year service in Barangay achieving its goal, Angat San Vicente. City Mayor Josemarie L. Diaz and the city’s Department of the Interior and Local Government Ricarte Castro administered the oath of office of the elected BSKE officials. The oath-taking marked the commencement of their two-year term, which will end in December 2025.
+            
+            </div>  
+        
+        
+        </div>
+      
+    </div>
+    
+    <div id="section3">
+            
+           
+          
+        <div class="container3">
+          <img src="h1.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: 119px;margin-left: 10px;margin-right: -9px;"> 
+          <img src="h2.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -81px;margin-left: 10px;margin-right: -9px;height: 115%;">
+          <img src="h3.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: 26px;margin-left: 10px;margin-right: -9px;height: 94%;">
+           
+            
+            
+          <div class="summary"><img src="sum1.png" style=" border: 1px solid black; box-shadow: 5px 3px 4px rgb(0 0 0 / 27%); margin-top:120px; margin-left: 43px;"></div>
+          <div class="summary2"><img src="demo2g1.png" style="margin-top: -435px; margin-left: 43px; border: 1px solid black; box-shadow: 5px 3px 4px rgb(0 0 0 / 27%);"></div>
+          <div class="demo1"><h1 id="aboutdemo" style=" margin-top: 84px; margin-left: 0; margin-right: 0; text-align: left; border-bottom: 2px solid black; margin-bottom: 27px;">Demographics</h1><p style=" line-height: 3;"><b>Households</b><br>The household population of San Vicente in the 2015 Census was 2,439 broken down into 545 households or an average of 4.48 members per household.</p><img src="demo1.png" class="hpopulation" style="position: relative; left: 6%;"> 
+          <img src="demo1g1.png" class="hpopulation"  style="margin-left: 156px; "> <img src="demo1g2.png" class="hpopulation" style="margin-left: 75px;"> <img src="demo1g3.png" class="hpopulation"></div>
+        
+            <div class="demo2"><p style="margin-top: -375px; line-height: 2;"><b>Population by age group</b><br><br>According to the 2015 Census, the age group with the highest population in San Vicente is 20 to 24, with 248 individuals. Conversely, the age group with the lowest population is 70 to 74, with 20 individuals.<br><br>Combining age groups together, those aged 14 and below, consisting of the young dependent population which include infants/babies, children and young adolescents/teenagers, make up an aggregate of 28.37% (692). Those aged 15 up to 64, roughly, the economically active population and actual or potential members of the work force, constitute a total of 66.95% (1,633). Finally, old dependent population consisting of the senior citizens, those aged 65 and over, total 4.67% (114) in all.<br><br>
+            The computed Age Dependency Ratios mean that among the population of San Vicente, there are 42 youth dependents to every 100 of the working age population; there are 7 aged/senior citizens to every 100 of the working population; and overall, there are 49 dependents (young and old-age) to every 100 of the working population.<br><br>
+            The median age of 26 indicates that half of the entire population of San Vicente are aged less than 26 and the other half are over the age of 26.</p><img src="demo2g2.png" style=" width: 376px; height:403px; margin-left: 301px;"></div>
+       </div>
+        
+        
+        <div class="container4">
+            <img src="h4.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -615px;margin-left: 10px;margin-right: -9px;">
+            <img src="h5.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -672px;margin-left: 10px;margin-right: -9px;">
+            <img src="h6.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -725px;margin-left: 10px;margin-right: -9px;">
+            <img src="h7.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -784px;margin-left: 10px;margin-right: -9px;">
+            <img src="h8.jpg" style="width: 347px;border-radius: 5px;box-shadow: 0 4px 10px rgb(0 0 0 / 75%);margin-top: -838px;margin-left: 10px;margin-right: -9px;">
+            
+              <div class="demo3"><p style="line-height: 2;"><b>Historical population</b><br><br>The population of San Vicente fell from 3,028 in 1990 to 2,214 in 2020, a decrease of 814 people over the course of 30 years. The latest census figures in 2020 denote a negative growth rate of 2.02%, or a decrease of 225 people, from the previous population of 2,439 in 2015.</p><img src="demo3g1.png">
+              <img src="demo3g2.png" style="margin-left: 46px;"><img src="demo3g3.png" style="margin-left:30px;"></div>
+              <div class="demo4" style="style=margin-top: -71px;"><h1 style="font-size: 31px;border-bottom: 2px solid black;margin-left: 0;margin-right: 0;text-align: left; margin-bottom: 38px; margin top:-79px;">Location</h1><p>San Vicente is situated at approximately 17.1433, 121.8891, in the island of Luzon. Elevation at these coordinates is estimated at 50.0 meters or 164.0 feet above mean sea level.</p><div style="margin-left: 253px; margin-top: 33px; margin-right: 0;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7622.984450806209!2d121.91588510906676!3d17.19489454660986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33856bede92b31e7%3A0xdae62b9a63b89f9e!2sSan%20Vicente%20(Pob.)%2C%20Ilagan%2C%20Isabela!5e0!3m2!1sen!2sph!4v1722349664547!5m2!1sen!2sph" width="600" height="450" style="/* border:0; */margin-top: 11px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </div>
+              <div class="summary3"></div>
+              <div class="summary4"></div>
+        </div>
+     
+        
+    </div>
+    
+    <div id="section4">
+ 
+   <div>
+    <main style="background: wheat;">
+        <section>
+            <div class="description">
+               <h1> <p>BARANGAY KAGAWAD</p></h1>
+            </div>
+            <div class="bry-officers-container">
+                <div class="officers">                    
+                    <div class="box">
+                        <img src="KAG. BYRON K. LEE.jpg"/>
+                        <p>Byron K. Lee</p>
+                        
+                    </div>
+                    <div class="box">
+                        <img src="KAG. ROSE MARIE DOMINO.png"/>
+                        <p>Rose Maria C. Domino</p>
+                        
+                    </div>
+                    <div class="box">
+                        <img src=" KAG. ARMANDO ANDRES.png"/>
+                        <p>Armando L. Andres</p>
+                        
+                    </div>
+                    <div class="box">
+                        <img src="KAG. TERESITA LOPEZ.jpg"/>
+                        <p>Teresita S. Lopez</p>
+                        
+                    </div>
+                    <div class="box">
+                        <img src="KAG. MICHAEL JUAN.png"/>
+                        <p>Michael D. Juan</p>
+                        
+                    </div>
+                    <div class="box">
+                        <img src=" KAG. ELSA LUCAS.png"/>
+                        <p>Elsa A. Lucas</p>
+                       
+                    </div>
+                    <div class="box">
+                        <img src=" KAG. RODESSA GERONIMO.jpg"/>
+                        <p>Rodessa E. Geronimo  </p>
+                        
+                    </div>
+                </div>
+                <div class="officers">
+                    <div class="box-kapitan">
+                        <img src="KAP. MARK ANTHONY P. BASCO.png" style=" height: 394px;">
+                        <p>Mark Anthony P. Basco</p>
+                        <h4>Barangay Kapitan</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section>
+            <div class="description-sk">
+                <h1> <p>SK Official</p></h1>
+             </div>
+
+            <div class="bry-officers-container">
+                <div class="officers">
+                    <div class="box-kapitan">
+                        <img src="SK PAENG ANES.jpg" style="height: 395px;">
+                        <p>Rafaelle Antonio Z. Anez</p>
+                        <h4>SK Chairman</h4>
+                    </div>
+                </div>
+
+                <div class="officers">
+                    <div class="box">
+                        <img src="millicent.jpg"/>
+                        <p>Alpha Millicnent Q. Ignacio</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="lloyd.jpeg"/>
+                        <p>Lloyd Christopher I. Abad</p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="joyce.jpeg"/>
+                        <p>Joyce Marie T. Allauigan</p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="logo1.png"/>
+                        <p>Rowell M. Mamuri</p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="jamirah.jpeg"/>
+                        <p>Jamirah Trixie R. Eugenio</p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="kate.jpg"/>
+                        <p>Emyrald Kate Q. Almonte</p>
+                        
+                    </div>
+
+                    <div class="box">
+                        <img src="logo1.png"/>
+                        <p>Ivan Russel A. Lucas </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+    </main>
+</div>
+
+   
+</div>
+
+    
+    <div id="section5">
+        <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <button class="faq-question">Anu-ano ang kailangan sa pagkuha ng Barangay I.D.?</button>
+            <div class="faq-answer">
+                <p>Kung ikaw ay kukuha ng Barangay I.D. kinakailangan mong ipasa ang mga sumusunod na REQUIREMENTS:<br>1.Magdala ng 10 recyclable materials tulad ng BOTE, PLASTIC BOTTLES, at DYARYO<br>2.Magdala ng isang valid ID na nakaaddress sa Barangay Molino IV o kung wala naman ay magdala ng HOA certificate bilang patunay na ikaw ay nakatira sa lugar na sakop ng barangay na ito.<br>3.Mag Fill-up ng form para sa mga kinakailangan personal na detalye.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Paano kumuha ng Barangay Indigency?</button>
+            <div class="faq-answer">
+                <p>Kung ito ay gagamitin para sa medical assistance/financial assistance:<br>1.Magdala lamang po ng isang valid I.D. ng maglalakad na naka -address sa Barangay San Vicente (present)<br>2.I.D. ng pasyente nangangailangan ng medical assistance o financial assistance.<br><br>Kung ito naman ay gagamitin para sa ka-anak na pumanaw/yumao:<br>1.Magdala lamang po ng isang valid I.D. ng maglalakad na naka-address sa Barangay Molino IV<br>I.D. ng ka-anak na pumanaw o yumao<br><br>Kung ito naman ay gagamitin bilang requirement sa Scholarship:<br>Magdala lamang po ng school I.D. ng mag-aaral</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Ano ang kailangan sa pagkuha ng Barangay Clearance?</button>
+            <div class="faq-answer">
+                <p>Upang makakuha ng Barangay Clearance, kinakailangan magdala ng alinman sa sumusunod na requirement:<br>I.D. na naka address sa Barangay Molino IV (present) 0 kaya naman ay HOA certification na syang nagpapatunay na ikaw ay residente ng nasabing Barangay</p>
+            </div>
+        </div>
+
+	<div class="faq-item">
+            <button class="faq-question">Ano ang proseso para maghain ng reklamo o usapin sa barangay?</button>
+            <div class="faq-answer">
+                <p>Kadalasang kailangan pumunta sa barangay hall para mag fill out ng form at mag schedule ng mediation session.</p>
+            </div>
+        </div>
+
+	<div class="faq-item">
+            <button class="faq-question">Paano ako makakalahok sa mga pagpupulong ng barangay assembly?</button>
+            <div class="faq-answer">
+                <p>Tignan ang mga anunsyo para sa schedule ng mga pagpupulong at detalye ng pagrerehistro</p>
+            </div>
+        </div>
+
+	<div class="faq-item">
+            <button class="faq-question">Saan ko makikita ang impormasyon tungkol sa badyet at mga proyekto ng barangay?</button>
+            <div class="faq-answer">
+                <p>Kadalasang ipinapakita ang detalye ng badyet sa mga asembleya o maaaring makuha ito sa pamamagitan ng pagpunta sa barangay hall.</p>
+            </div>
+        </div>
+        
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isOpen = answer.style.display === 'block';
+            document.querySelectorAll('.faq-answer').forEach(answer => answer.style.display = 'none');
+            answer.style.display = isOpen ? 'none' : 'block';
+        });
+    });
+});
+</script>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+  <div class="logo"><img src="sealfooter.png" style="width: 148px;margin-left: 29px;"><img src="logo1.png" style=" width: 139px; margin-top: 28px; margin-left: 21px;"></div>
+            <div class="content"><h1 style="margin-top: 8px; font-size: 23px; margin-bottom: 0;">CONTACT US!</h1><div><img src="facebook.png" style="width: 3%;margin-top: 20px;margin-left: 214px;"><p style=" margin-left: 256px; margin-bottom: 15px; margin-top: -28px;">Barangay San Vicente</p></div> <div><img src="gmail.png" style="width: 3%;margin-left: 214px;"><p style=" margin-left: 256px; margin-bottom: 15px; margin-top: -28px;">sanvicente06201987@gmail.com</p></div><div><img src="phone-call.png" style="width: 3%;margin-left: 215px;"><p style=" margin-left: 256px; margin-bottom: 15px; margin-top: -28px;">+639 774 187 469</p></div></div>
+  <div class="extra"><p style="font-size: 12px; margin-top: 173px; margin-left: 32px;">© 2024 | COPYRIGHT: BARANGAY SAN VICENTE | ATIN TO!</p></div>
+</div>
+    </footer>
+    </body>
+</html>
